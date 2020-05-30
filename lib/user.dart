@@ -16,6 +16,7 @@ class User {
 
   //factory, $이름도 맞춰주어야함.
   //다 만들고 나서 flutter pub run build_runner build을 terminal에서 해준다.  
+  //flutter pub run build_runner build을 하면 알아서 만들어준다. 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
   Map<String, dynamic> toJson() => _$UserToJson(this); 
 }
